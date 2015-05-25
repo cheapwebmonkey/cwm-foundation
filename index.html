@@ -4,7 +4,7 @@
     <title>Cheap Web Ninjas</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/normalize.css" rel="stylesheet" media="screen">
-    <link href="css/foundation.css" rel="stylesheet" media="screen">
+    <link href="css/foundation.min.css" rel="stylesheet" media="screen">
     <link href="css/foundation-icons.css" rel="stylesheet" media="screen">
     <link href="css/my-styles.css" rel="stylesheet" media="screen">
     <script src="js/modernizr.js"></script>
@@ -14,7 +14,7 @@
 
     <!-- Top Bar -->
     <div class="contain-to-grid fixed">
-      <nav class="top-bar">
+      <nav class="top-bar data-topbar">
         <ul class="title-area">
           <li class="name">
             <h1>
@@ -24,7 +24,6 @@
 
           <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a>
           </li>
-
         </ul>
         <section class="top-bar-section">
           <ul class="right">
@@ -45,13 +44,13 @@
 
 
     <!-- Content Slider -->
-    <div class="row show-for-medium-only">
+    <div class="row">
       <div class="medium-12 column" data-orbit>
         <div>
           <h1>We can fix it.</h1>
           <p class="lead">Your old site, your non-responsive site, your sad lack of SEO, clunky data collection, no data collection, no effective social medai presense... our ninjas can fix it.</p>
           <p class="button-group radius">
-            <a class="medium button success" data-reveal-id="formModal">Contact us</a>
+            <a class="medium button hide-for-small" data-reveal-id="formModal">Contact us</a>
             <a class="medium button hide-for-small" href="#">View our work</a>
           </p>
         </div>
@@ -69,17 +68,16 @@
     </div>
     <!-- End Content Slider -->
 
-  
-    <!-- Feature Content -->
-    <div id="firstStop" class="row">
-      <div class="medium-4 columns">
+  <!-- Feature Content -->
+  <div class="row">
+    <div class="medium-4 column">
         <i class="fi-video"></i>
         <h3>Beacuse digital ninjas.</h3>
         <p>We produce quality, interactive, standards-compliant sites, apps, logos, templates and digital marketing. Our specialization is app and web site design, development and maintenance, but we can make just about anything your heart desires. Except world peace.</p>
       </div>
 
-      <div class="medium-4 columns">
-        <i class="fi-video"></i>
+      <div class="medium-4 column">
+        <i class="fi-torsos-all"></i>
         <h3>D and D</h3>
         <p>If your digital footprint is a bit undefined or blurry, you need our help. No, really. The possibilities are boundless. And since we keep up with all of the latest tech trends, so you don't have to. Lose your digital headache.</p>
       </div>
@@ -91,91 +89,69 @@
       </div>
     </div><!-- End Feature Content -->
 
-    <!-- Treehouse Content -->
+    <!-- Ninja Content -->
     <div class="row">
-
       <hr>
-      <div id="secondStop" class="medium-6 medium-push-6 column">
-        <h4>Lorem Ipsum</h4>
-        <p>Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem Ipsum</p>
+      <div class="medium-6 medium-push-6 column">
+        <h4>Ipsum Lorem Ipsum</h4>
+        <p>Ipsum Lorem IpsumIpsum Lorem IpsumIpsum Lorem IpsumIpsum Lorem IpsumIpsum Lorem IpsumIpsum Lorem IpsumIpsum Lorem IpsumIpsum Lorem IpsumIpsum Lorem Ipsum</p>
         <div class="row">
           <div class="medium-6 column">
-            <img class="th radius" data-reveal-id="vidModal" src="img/thumb.jpg" data-interchange="[img/thumb_sm.jpg, (only screen and (min-width: 1px))], [img/thumb_lg.jpg, (only screen and (-webkit-min-device-pixel-ratio: 2))]">
+            <img class="th radius" data-reveal-id="vidModal" src="img/thumb.jpg">
           </div>
           <div class="medium-6 column">
-            <p><em>Lorem Ipsum!</em></p>
-            <p><a href="#">Lorem Ipsum &raquo;</a></p>
+            <p><em>Ipsum Lorem Ipsum!</em></p>
+            <p><a href="#">Ipsum Lorem Ipsum &raquo;</a></p>
           </div>
-         </div>
-       </div>
-      <div id="thirdStop" class="medium-6 medium-pull-6 colums">
-        <h4>About the Ninjas</h4>
-        <p>Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem Ipsum.</p>
-        <a href="#" class="medium button success radius">Lorem Ipsume &raquo;</a>
+        </div>
       </div>
-
-    </div><!-- End Treehouse Content -->
+      <div class="medium-6 medium-pull-6 column">
+        <h4>About the Ninjas</h4>
+        <p>Ipsum Lorem IpsumIpsum Lorem IpsumIpsum Lorem IpsumIpsum Lorem IpsumIpsum Lorem IpsumIpsum Lorem IpsumIpsum Lorem IpsumIpsum Lorem IpsumIpsum Lorem Ipsum.</p>
+        <a href="#" class="medium button success radius">More info &raquo;</a>
+      </div>
+    </div>
+<!-- End Ninja Content -->
 
     <!-- Page Footer -->
     <div class="row">
       <hr>
       <div class="medium-4 medium-centered column">
-        <p>&copy; 2015 CWN</p>
+        <p>&copy; 2015 by CWN</p>
       </div>
     </div>
     <!-- End Page Footer -->
 
     <!-- Form Modal -->
-    <div id="formModal" class="reveal-modal small">
+    <div id="formModal" class="reveal-modal small" data-reveal>
       <h3>We'll Text You the Link!</h3>
-      <a href="#" class="close-reveal-modal">&#215;</a>
-      <form class="custom">
-        <fieldset>
-          <input type="tel" placeholder="Mobile Phone">
-          <select>
-            <option>iOS</option>
-            <option>Android</option>
-          </select>
-          <button type="submit" class="small button">Text Me!</button>
-        </fieldset>
-      </form>
-    </div>
+      <fieldset>
+        <input type="tel" placeholder="Mobile Phone">
+        <select>
+          <option>iOS</option>
+          <option>Android</option>
+        </select>
+        <button type="submit" class="small button">Text me!</button>
+      </fieldset>
+    </form>
+    <a href="#" class="close-reveal-modal">&#215;</a>
+  </div>
     <!-- End Form Modal -->
 
     <!-- Video Modal -->
-    <div id="vidModal" class="reveal-modal">
+    <div id="vidModal" class="reveal-modal" data-reveal>
+      <h3>Watch the ninjas in action!</h3>
       <div class="flex-video widescreen">
         <iframe width="420" height="315" src="http://www.youtube.com/embed/hTf0CgRC1_Q" frameborder="0" allowfullscreen></iframe>
       </div>
-      <a href="#" class="close-reveal-modal">&#215;</a>
+      <a class="close-reveal-modal">&#215;</a>
     </div>
     <!-- End Video Modal -->
-
-    <!-- Joyride -->
-    <ol class="joyride-list" data-joyride>
-      <li data-id="firstStop" data-text="Go!" data-options="tipLocation:top; tipAnimation:fade; scrollSpeed:600;">
-        <p>Check out these neat sites!</p>
-      </li>
-      <li data-id="secondStop" data-text="Next">
-        <p>We'll make yours just as nice...</p>
-      </li>
-      <li data-id="thirdStop" data-button="End">
-        <p>When you hire the Ninjas!</p>
-      </li>
-    </ol>
-    <!-- End Joyride -->
-
-
-
-    <script>
-      document.write('<script src=' +
-      ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
-      '.js><\/script>')
-    </script>
+    <script src="js/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
+    <script src="js/foundation.migrate.js"></script>
     <script>
       $(document).foundation();
-      $(document).foundation('joyride','start');
     </script>
 
   </body>
