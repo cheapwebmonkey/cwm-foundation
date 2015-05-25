@@ -6,7 +6,7 @@
 	padding: 30px 20px 0;
 	margin-bottom: 40px;
 }
-.orbit-container div {
+.orbit-slides-container div {
 	background: whitesmoke;
 }
 .button-group,
@@ -19,6 +19,13 @@
 /* Icons
 ================================ */
 
+[class*="fi-"] {
+	font-size: 3em;
+	text-align: center;
+	color: #2ba6cb;
+	display: block;
+}
+
 /* Media Queries
 ================================ */
 
@@ -28,18 +35,5 @@
 		display: none;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
