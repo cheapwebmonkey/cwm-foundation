@@ -11,35 +11,32 @@
 
   </head>
   <body>
+    <!-- Off canvas nav -->
+    <div class="off-canvas-wrap">
+      <div class="inner-wrap">
 
-    <!-- Top Bar -->
-    <div class="contain-to-grid fixed">
-      <nav class="top-bar data-topbar">
-        <ul class="title-area">
-          <li class="name">
-            <h1>
-              <a href="#">Ninja | CWN</a>
-            </h1>
-          </li>
+        <nav class="tab-bar">
+          <section class="left-small">
+            <a class="left-off-canvas-toggle menu-icon" ><span></span></a>
+          </section>
+          <section class="middle tab-bar-section">
+            <h1 class="title">Ribbit</h1>
+          </section>
+        </nav>
 
-          <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a>
-          </li>
-        </ul>
-        <section class="top-bar-section">
-          <ul class="right">
+        <aside class="left-off-canvas-menu">
+          <ul class="off-canvas-list">
+            <li><label>Ribbit Links</label></li>
             <li><a href="#">Home</a></li>
-            <li class="has-dropdown">
-              <a href="#">Our work</a>
-               <ul class="dropdown">
-                <li><a href="#">Resident Ninjas</a></li>
-               </ul>
-              </li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#">About Ribbit</a></li>
+            <li><label>Treehouse Links</label></li>
+            <li><a href="#">About Treehouse</a></li>
+            <li><a href="#">Video Library</a></li>
+            <li><a href="#">Tracks</a></li>
+            <li><a href="#">Plans &amp; Pricing</a></li>
           </ul>
-        </section>
-      </nav>
-    </div>
-    <!-- End Top Bar -->
+        </aside>
+
     <!-- Interchange Content -->
     <div data-interchange="[header_sm.html, (small)], [header_md.html, (medium)], [header_lg.html, (large)]">
     </div><!-- End Interchange Content -->
@@ -97,6 +94,9 @@
       </div>
     </div>
     <!-- End Page Footer -->
+    <a class="exit-off-canvas"></a>
+  </div><!-- End inner wrap -->
+</div><!-- End off canvas nav -->
 
     <!-- Form Modal -->
     <div id="formModal" class="reveal-modal small" data-reveal>
